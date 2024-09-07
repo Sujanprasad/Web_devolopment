@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script>
+        console.log("javascript");
+
+        console.log("debugging");
+
+        function add(a,b){
+            console.log(`addition of ${a},${b}`,a+b)
+            return a+b;
+
+        }
+        function sub(a,b){
+            console.log(`subtraction of ${a},${b}`,a-b)
+            return a-b;
+        }
+        function div(a,b){
+            console.log(`division of ${a},${b}`,a/b)
+            return a/b;
+        }
+        function mul(a,b){
+            console.log(`multiplication of ${a},${b}`,a*b)
+            return a*b;
+        }
+    
+       var a=add(5,6);
+       var s=sub(5,6);
+       var d=div(5,6);
+       var m=mul(5,6);
+      const arthemetic = {
+       add:a,
+       sub:s,
+       div:d,
+       mul:m  
+      };
+      console.log(arthemetic)
+      sessionStorage.setItem("values",JSON.stringify(arthemetic));
+      
+       function display(){
+       var x=JSON.parse(sessionStorage.getItem("values"));
+       document.getElementById("demo").innerHTML="addition of 5,6="+x.add+"<br>"+"subtraction of 5,6 ="+x.sub+"<br>"+"multiplication of ="+x.mul+"<br>"+"division of ="+x.div+"<br>";  
+       }
+    </script>
+    </head>
+<body onload="display()">
+   
+    <p id="demo"></p>
+   
+</body>
+</html>

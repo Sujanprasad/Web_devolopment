@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value;
+                if (name === "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+
+                const email = document.getElementById('email').value;
+                const age = document.getElementById('age').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirm-password').value;
+
+                if (password !== confirmPassword) {
+                    alert('Password doesn\'t match');
+                    document.getElementById('registrationForm').reset();
+                    return false;
+                }
+
+                const userData = {
+                    name: name,
+                    email: email,
+                    age: age,
+                    password: password,
+                };
+
+                // Save data to local storage
+                localStorage.setItem('userData', JSON.stringify(userData));
+
+                // Display stored data
+                displayStoredData();
+
+                alert('Registration successful.');
+                document.getElementById('registrationForm').reset();
+                return true;
+            });
+
+            function displayStoredData() {
+                // Retrieve data from local storage
+                const storedData = JSON.parse(localStorage.getItem('userData'));
+
+                // Clear previous data
+                const container = document.getElementById('result');
+                container.innerHTML = '';
+
+                // Create and append elements to display data
+                for (const [key, value] of Object.entries(storedData)) {
+                    const p = document.createElement('p');
+                    p.innerHTML = `<strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong>${value}`;
+                    container.appendChild(p);
+                }
+            }
+
+            // Initially clear the result container
+            document.getElementById('result').innerHTML = '';
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+            width: 40%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1e1bd4;
+        }
+
+        input:hover {
+            cursor: pointer;
+            background-color: #e0edf3;
+            transition: 0.3s ease;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm" class="form">
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(4, 4, 78);
+    color: white;  
+}
+.header ul{
+    list-style: none;
+    text-align: right;
+}
+.header li{
+display: inline-block;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    display:block ;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+.header a:hover{
+    color: orange;
+}
+.navbar {
+    background-color: rgb(4, 4, 78);
+    color: white;  
+}
+.nav ul{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    display:block ;
+    padding: 10px 10px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.nav a:hover{
+    color: orange;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.logo{
+    display: flex;
+    justify-content:space-between ;
+}
+.image{
+    width: 100%;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.aboutvardhaman{
+    width: 150%;
+    margin: 25px;
+}
+.aboutvardhaman h3{
+    text-align: center;
+}
+.news h3{
+    text-align: center;
+}
+marquee .div1,.div2,.div3,.div4,.div5{
+    display: flex;
+    margin: 20px;
+}
+marquee img{
+    margin-right: 15px;
+}
+.why-vardhaman h1{
+    text-align: center;
+    padding: 25px;
+}
+.line{
+    display:flex;
+    justify-content: space-between;
+}
+.star{
+    display: flex;
+    
+}
+#r{
+    color: orange;
+}
+.star i{
+    margin: 20px;
+}
+.announcements h1{
+text-align: center;
+padding: 20px;
+}
+.announcements p{
+margin: 25px;
+}
+.announcements-block{
+    display: flex;
+}
+.cards{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 100px;
+background-color:aliceblue;
+}
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgb(0,0,0,0.2);
+    margin: 20px;
+}
+.card-content{
+    padding: 10px;
+}
+.card-content button{
+    border: none;
+    color: orange;
+}
+.card-content button:hover{
+    cursor: pointer;
+}
+.credits{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.credit{
+    width: 20%;
+    height: fit-content;
+    margin:auto;
+    border-radius: 1%;
+    background-color:#dcdcdc4d;
+    padding: 10px;
+
+}
+.creditt {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.creditt img{
+border-radius: 50%;
+margin-right: 15px;
+}
+#para{
+    padding:  10px 5px 10px 5px;
+    overflow: hidden;
+}
+#para p{
+    color: or;
+}
+#paragraph{
+    padding: 10px;
+
+}
+.details{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.address,.resources,.quicklinks,.contact{
+    margin: 50px;
+
+}
+.address,.resources,.quicklinks,.contact{
+    h3{
+        color:orange;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        padding: 5px;
+    }
+    li:hover{
+        color: orange;
+    }
+    li p{
+        color: orange;
+    }
+}
+.copyright{
+    text-align: center;
+    margin: 10px;
+}

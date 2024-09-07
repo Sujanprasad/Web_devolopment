@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <script>
+        function myfunction()
+        {
+           let x = document.getElementById("Roll").value
+           if((x>=0)&&(x<=100))
+           {
+            document.getElementById("demo").innerHTML="your roll no. is valid"
+           }
+           else{
+              document.getElementById("demo").innerHTML="enter valid roll no";
+              document.getElementById("password").style.display="none"; 
+              document.getElementById("pas").style.display="none";
+              document.getElementById("pass").style.display="none"; 
+           }
+        }
+        function password()
+        {
+            let x=document.getElementById("password").value;
+            if(x==1234){
+            document.getElementById("one").innerHTML="login succesful";
+            }
+            else{
+                document.getElementById("one").innerHTML="wrong password"
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: black;
+            align-items: center;
+        }
+        div{
+            background-color: white;
+            height: 400px;
+            width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+            text-align: center;
+            padding: 50px;
+            padding-top: 10%;
+        }
+   
+    </style>
+</head>
+<body>
+    <div>
+      <label for="Roll">enter roll no:</label><br>
+      <input id="Roll" type="number"  required> <br><br>
+      <button  onclick="myfunction()">check roll no</button>
+      <p id="demo"></p>
+      <label for="password" id="pas">enter password:</label><br>
+      <input id="password" type="text" required><br><br>
+      <button id="pass"  onclick="password()">submit</button>
+      <p id="one"></p>
+    </div>
+
+     
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>TEMPLATE 9</title>
+  <style>
+  .col-1{width:8.33%}
+  .col-2{width:16.66%}
+  .col-3{width:25%}
+  .col-4{width:33.33%}
+  .col-5{width:41.66%}
+  .col-6{width:50%}
+  .col-7{width:58.33%}
+  .col-8{width:66.66%}
+  .col-9{width:75%}
+  .col-10{width:83.33%}
+  .col-11{width:91.66%}
+  .col-12{width:100%}
+  
+  .head1{
+    display:flex;
+  }
+  .logo{
+    padding-left:70px;
+  }
+  .head2{
+    display:flex;
+    padding-left:450px;
+    padding-bottom:10px;
+  }
+  .btn1{
+    border:1px solid #6f00fe;
+    border-radius:30px;
+    color:#6f00fe;
+    padding:10px;
+    padding-bottom:5px;
+    padding-top:5px;
+    background-color:white;
+  }
+  .btn2{
+    border:1px solid #6f00fe;
+    border-radius:30px;
+    padding:10px;
+    padding-bottom:5px;
+    padding-top:5px;
+    background-color:#6f00fe;
+    color:white;
+  }
+  .btn3{
+    padding:15px;
+    padding-bottom:7px;
+    padding-top:7px;
+    background-color:#6f00fe;
+    color:white;
+    border:none;
+    border-radius:5px;
+  }
+  .p1{
+    font-weight:bold;
+    font-size:30px;
+    margin:0px;
+  }
+  .head3{
+    display:flex;
+    background-color:#6f00fe;
+    color:white;
+    padding:15px;
+    padding-right:0px;
+    font-size:12px;
+    div{
+      padding-left:20px;
+    }
+  }
+  .head3-1{
+    margin-left:30px;
+    text-decoration:underline;
+    text-decoration-thickness:3px;
+    border-radius:5px;
+    color:skyblue;
+  }
+  .img1{
+    position:absolute;
+    z-index:-1;
+  }
+  .img1cnt{
+    color:white;
+    margin-top:0px;
+    padding-left:70px;
+    padding-top:40px;
+  }
+  .div1{
+    display:flex;
+    margin-top:75px;
+  }
+  .div2{
+    display:flex;
+    padding-left:50px;
+  }
+  .div2cnt{
+    margin-top:50px;
+  }
+  .img3{
+    padding-left:50px;
+  }
+  .img4{
+    margin-top:30px;
+  }
+  .div3{
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: #f5f5ff;
+    padding-right:180px;
+  }
+  .div3cnt{
+    display:flex;
+    padding-left:80px;
+  }
+  .div3-1{
+    padding-left: 370px;
+  }
+  .div3-5{
+    display:flex;
+    margin-top:50px;
+    margin-left:175px;
+    div{
+      padding-right:5px;
+    }
+  }
+  .div3-3cnt,.div3-4cnt{
+    padding-left:30px;
+  }
+  .div3-10{
+    transform:scaleY(-1);
+  }
+  .img11{
+    z-index:1;
+    position:absolute;
+  }
+  .div4-8{
+    display:flex;
+    padding-top:500px;
+    padding-left:110px;
+  }
+  .div4-4,.div4-5,.div4-6{
+    z-index:1;
+    background-color:white;
+    border-radius:10px;
+    padding:5px;
+    margin-left:20px;
+    box-shadow:0px 2px 20px lightgray;
+  }
+  li{
+    margin-bottom:5px;
+  }
+  .div5{
+    background-color: #f5f5ff;
+  }
+  .div5-6{
+    display:flex;
+    padding-left:80px;
+    padding-right:80px;
+  }
+  .div5-2,.div5-3,.div5-4{
+    display:flex;
+    border:1px solid  #6f00fe;
+    margin-right:10px;
+    border-radius:5px;
+    background-color:white;
+  }
+  .div5-2cnt,.div5-3cnt,.div5-4cnt{
+    text-align:center;
+    padding:5px;  
+  }
+  .div5-2img,.div5-3img,.div5-4img{
+    background-color:red;
+  }
+  .div6-6{
+    display:flex;
+    padding-left:80px;
+    padding-right:80px;
+  }
+  .div6-3,.div6-4,.div6-5{
+    margin-left:10px;
+  }
+  .div6-2cnt,.div6-3cnt,.div6-4cnt{
+    padding-left:5px;
+  }
+  .div7{
+    background-color: #f5f5ff;
+  }
+  .div7-2{
+    display:flex;
+    border-radius:20px;
+    border:1px solid  #6f00fe;
+    background-color:white;
+    padding:5px;
+    padding-left:15px;
+    margin-left:375px;
+  }
+  .div7-7{
+    display:flex;
+    margin-left:370px;
+    margin-top:40px;
+    padding-bottom:50px;
+  }
+  .div7-3,.div7-4,.div7-5,.div7-6{
+    padding-left:20px;
+  }
+  .footer{
+    background-color:black;
+    color:white;
+  }
+  .f1{
+    padding-left:420px;
+    margin-top:30px;
+    padding-top:15px;
+    padding-bottom:30px;
+  }
+  .f2{
+    display:flex;
+    margin-left:220px;
+  }
+  .f2-1,.f2-2,.f2-3,.f2-4{
+    margin-left:40px;
+    font-size:14px;
+    margin-bottom:30px;
+  }
+  .f3{ 
+    font-size:14px;
+    margin-left:345px;
+    padding-bottom:30px;
+  }
+  .ftr{
+    background-color:black;
+    color:white;
+    padding-left:400px;
+    margin-top:px;
+    font-size:14px;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  </style>
+</head>
+<div class="header">
+  <div class="head1">
+    <div class="logo col-5">
+      <img class="col-5"src="https://i.ibb.co/cX52b1f/image-32.png" alt="image-1" border="0">
+    </div>
+    <div class="head2 col-7">
+      <div class="members">
+        <button class="btn1">MEMBERS</button>
+      </div>
+      <div class="joinus">
+        <button class="btn2" style="margin-left:10px;">JOIN US</button>
+      </div>
+    </div>
+  </div>
+  <div class="head3 col-12">
+    <div class="head3-1">Home</div>
+    <div class="head3-2">About us</div>
+    <div class="head3-3">Rare Earth</div>
+    <div class="head3-4">News</div>
+    <div class="head3-5">Publications</div>
+    <div class="head3-6">Events</div>
+    <div class="head3-7">Market Data</div>
+    <div class="head3-8">Sustainability</div>
+    <div class="head3-9">Membership</div>
+  </div>
+</div>
+<div>
+  <img class="img1 col-12" src="https://i.ibb.co/YRk6tw3/Group-48096262-1.png" alt="image-2">
+  <div class="img1cnt col-5">
+    <p style="margin-bottom:5px;font-weight:bold;">05-06 October 2022</p>
+    <p style="font-size:35px;margin-top:0px;margin-bottom:5px;line-height:50px;font-weight:bold;">REIA 2022 Annual Conference</p>
+    <p style="margin-top:0px;">congress park husk-ichhassb</p>
+    <button class="btn3">find out more -&gt;</button>
+  </div>
+</div>
+<div class="div1">
+  <div class="div2 col-6">
+    <div class="img2div col-5">
+      <div class="img2" >
+        <img class="col-12"src="https://i.ibb.co/K7vwfgF/Image-Placeholder.png" alt="Image-3">
+      </div>
+      <div class="img3 ">
+        <img class="col-10"src="https://i.ibb.co/n72WKTb/Container.png" alt="Image-r">
+      </div>
+    </div>
+    <div class="img4 col-8">
+      <img class="col-11" src="https://i.ibb.co/2YyxvKQ/Image-Placeholder-1.png" alt="Image-5">
+    </div>
+  </div>
+  <div class="div2cnt col-6">
+    <p class="p1">What is REIA?</p>
+    <p style="line-height:30px;font-size:14px;">The Rare Earth Industry Association (REIA) is an international non-profit organization representing the global REE industry. Founded in June 2019, under the auspices of EIT Raw Materials Internationalization project GloREIA. The network continues to grow today.
+
+REIA has active members worldwide representing all major countries, With such a global context, REIA is well placed to contribute to a better understanding of rare earth element (REE) value chain.</p>
+    <button class="btn3">veiw more -&gt;</button>
+  </div>
+</div>
+<div class="div3 col-10">
+  <div class="div3-1 ">
+    <p class="p1">Activities of REIA</p>
+    <p style="margin-top:0px;padding-left:40px;font-size:12px;">3 WORKSTREM STRUCTURES</p>
+  </div>
+  <div class="div3-5 col-12">
+      <div class="div3-2img col-1">
+        <img class="col-12" src="https://i.ibb.co/6HWr26m/Group-48096265.png" alt="image-6" border="0">
+      </div>
+    <div class="div3-9 col-3">
+      <img class="col-12" src="https://i.ibb.co/zmNRJkq/Ellipse-79.png" alt="image-7" border="0">
+    </div>
+      <div class="div3-3img col-1">
+        <img class="col-12"src="https://i.ibb.co/bKs5t4B/Group-48096266.png" alt="image-8" border="0">
+      </div>
+    <div class="div3-10 col-3">
+      <img class="col-12"src="https://i.ibb.co/zmNRJkq/Ellipse-79.png" alt="image-9" border="0">
+    </div>
+      <div class="div3-4img col-1">
+         <img class="col-12" src="https://i.ibb.co/bKs5t4B/Group-48096266.png" alt="image-10" border="0">
+      </div>
+  </div>
+
+  <div class="div3cnt col-12">
+      <div class="div3-2cnt">
+        <p style="color:#6f00fe;text-align:center">1.Stakeholder Network</p>
+        <ul style="text-align:left">
+          <li>Managing the RE association</li>
+          <li>Offer stalkholder networking</li>
+          <li>Social & political advocacy</li>
+          <li>Sharing business intelligence</li>
+          <li>Matchmaking for projects</li>
+        </ul>
+      </div>
+      <div class="div3-3cnt">
+        <p style="color:#6f00fe;text-align:center">2.Fast And On Time</p>
+        <ul style="text-align:left">
+          <li>Managing the RE association</li>
+          <li>Offer stalkholder networking</li>
+          <li>Social & political advocacy</li>
+          <li>Sharing business intelligence</li>
+          <li>Matchmaking for projects</li>
+        </ul>
+      </div>
+      <div class="div3-4cnt">
+        <p style="color:#6f00fe;text-align:center">3.Affordable Price</p>
+        <ul style="text-align:left;">
+          <li>Managing the RE association</li>
+          <li>Offer stalkholder networking</li>
+          <li>Social & political advocacy</li>
+          <li>Sharing business intelligence</li>
+          <li>Matchmaking for projects</li>
+        </ul>
+      </div>
+  </div>
+</div>
+<div class="div4">
+  <p class="p1" style="z-index:2;padding:40px;padding-left:400px;">REIA video</p>
+  <div>
+  <img class="img11 col-12" style="padding-top:130px;" src="https://i.ibb.co/Khs3DVM/Rectangle-23815.png" alt="image-11" height="580px;">
+  </div>
+  <div class="div4-1"style="padding-left:200px;">
+    <img class="col-7"style="z-index:2;position:absolute;" src="https://i.ibb.co/k5CnXM5/Rectangle-23817.png" alt="image-12">
+    <img style="z-index:3;position:absolute;padding-left:260px;padding-top:130px;" src="https://i.ibb.co/ZY0p3rp/Group-6356466.png" alt="play-btn"height="50px">
+    <p style="z-index:2;position:absolute;color:white;font-weight:bolder;font-size:20px;padding-top:320px;">Rwebinar: ree market and geo-economics</p>
+    <p class="col-7"style="font-size:13px;z-index:2;position:absolute;color:white;padding-top:360px;">The Rare Earth Industry Association (REIA) is a global organization with partners representing the whole REE value chain, it aims to develop a transparent, sustainable and integrated value chain for REES</p>
+    <p style="font-size:15px;z-index:2;position:absolute;color:white;padding-top:420px;">April 02, 2021</p>
+  </div>
+  <div class="div4-8">
+    <div class="div4-4 col-3">
+      <div class="div4-4img">
+        <img style="z-index:3;position:absolute;padding-left:90px;padding-top:60px;" src="https://i.ibb.co/ZY0p3rp/Group-6356466.png" alt="play-btn"height="30px">
+        <img class="col-12" src="https://i.ibb.co/4pDxqGY/unsplash-l44-HV2wprr-Y.png" alt="image-13">
+      </div>
+      <div class="div4-4cnt">
+       <p style="font-weight:bolder;font-size:13px;margin-bottom:0px;">Rwebinar: REE Market And Geo-Economics</p>
+       <p style="font-size:10px;">As the global markets rebound from the impact of the covid-19 pandemic, reia facilitated...more</p>
+       <p style="font-size:13px;color:#6f00fe;">April 02, 2021</p>
+      </div>
+    </div>
+    <div class="div4-5 col-3">
+      <div class="div4-5img">
+        <img style="z-index:3;position:absolute;padding-left:90px;padding-top:60px;" src="https://i.ibb.co/ZY0p3rp/Group-6356466.png" alt="play-btn"height="30px">
+        <img class="col-12" src="https://i.ibb.co/n6g8vWK/unsplash-l44-HV2wprr-Y-1.png" alt="image-14">
+      </div>
+      <div class="div4-5cnt">
+       <p style="font-weight:bolder;font-size:13px;margin-bottom:0px;">Rwebinar: REE Market And Geo-Economics</p>
+       <p style="font-size:10px;">As the global markets rebound from the impact of the covid-19 pandemic, reia facilitated...more</p>
+       <p style="font-size:13px;color:#6f00fe;">April 02, 2021</p>
+      </div>
+    </div>
+    <div class="div4-6 col-3">
+      <div class="div4-6img">
+        <img style="z-index:3;position:absolute;padding-left:90px;padding-top:60px;" src="https://i.ibb.co/ZY0p3rp/Group-6356466.png" alt="play-btn"height="30px">
+        <img style="z-index:2;"class="col-12" src="https://i.ibb.co/jRFK56g/unsplash-l44-HV2wprr-Y-2.png" alt="image-15">
+      </div>
+      <div class="div4-6cnt">
+       <p style="font-weight:bolder;font-size:13px;margin-bottom:0px;">Rwebinar: REE Market And Geo-Economics</p>
+       <p style="font-size:10px;">As the global markets rebound from the impact of the covid-19 pandemic, reia facilitated...more</p>
+       <p style="font-size:13px;color:#6f00fe;">April 02, 2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="div4-7">
+    <button class="btn3" style="margin-left:420px;margin-top:30px;margin-bottom:30px;">Find Out More -&gt;</button>
+  </div>
+</div>
+<div class="div5">
+  <div class="div5-1">
+    <p class="p1" style="z-index:2;padding:40px;padding-left:440px;">NEWS</p>
+  </div>
+  <div class="div5-6">
+    <div class="div5-2 col-4">
+      <div class="div5-2img col-5">
+        <img class="col-12" src="https://i.ibb.co/8DyLrdN/IMG-20240609-125715.png" alt="Image-16" height="100%">
+      </div>
+      <div class="div5-2cnt col-7">
+        <p style="margin-top:30px;font-size:10px;font-weight:bold;">Bruker BioSpin Group, joins REIA, the Global Rare Earth Industry Association.</p>
+        <p style="font-size:9px;">Bruker is enabling scientists to make breakthrough discoveries and develop new applications that improve the quality of human life. Bruker&apos;s high-performance scientific</p>
+        <p style="font-size:9px;color:#6f00fe">Read More -&gt;</p>
+      </div>
+    </div>
+    <div class="div5-3 col-4">
+      <div class="div5-3img col-5">
+        <img class="col-12" src="https://i.ibb.co/6HtYSW7/IMG-20240609-125617.png" alt="Image-17" height="100%">
+      </div>
+      <div class="div5-3cnt col-7">
+        <p style="margin-top:30px;font-size:10px;font-weight:bold;">Bruker BioSpin Group, joins REIA, the Global Rare Earth Industry Association.</p>
+        <p style="font-size:9px;">Bruker is enabling scientists to make breakthrough discoveries and develop new applications that improve the quality of human life. Bruker&apos;s high-performance scientific</p>
+        <p style="font-size:9px;color:#6f00fe">Read More -&gt;</p>
+      </div>
+    </div>
+    <div class="div5-4 col-4">
+      <div class="div5-4img col-5">
+        <img class="col-12" src="https://i.ibb.co/4TwDx70/Container-3.png" alt="image-18" height="100%">
+      </div>
+      <div class="div5-4cnt col-7">
+        <p style="margin-top:30px;font-size:10px;font-weight:bold;">Bruker BioSpin Group, joins REIA, the Global Rare Earth Industry Association.</p>
+        <p style="font-size:9px;">Bruker is enabling scientists to make breakthrough discoveries and develop new applications that improve the quality of human life. Bruker&apos;s high-performance scientific</p>
+        <p style="font-size:9px;color:#6f00fe">Read More -&gt;</p>
+      </div>
+    </div>
+  </div>
+  <div class="div5-5">
+    <button class="btn3" style="margin-left:420px;margin-top:30px;margin-bottom:15px;">Find Out More -&gt;</button>
+  </div>
+</div>
+<div class="div6">
+  <div class="div6-1"> 
+    <p class="p1" style="padding:40px;padding-left:430px;">EVENTS</p>
+  </div>
+  <div class="div6-6">
+    <div class="div6-2 col-4">
+      <img class="col-3" style="position:absolute;z-index:-1;" src="https://i.ibb.co/bmBBNYN/Rectangle-23818.png" alt="image-19">
+      <div class="div6-2cnt">
+        <div class="date col-3"><p style="margin-left:5px;border-radius:2px;background-color:#6f00fe;color:white;padding:5px;font-size:8px;margin-bottom:0px;margin-top:210px;">April 02,2022</p></div>
+        <div class="div6-2cnt col-10"><p style="border-radius:2px;font-weight:bolder;font-size:10px;background-color:white;margin-top:0px;padding:10px;padding-top:15px;padding-bottom:15px;">Rwebinar: ree market and geo-economics</p></div>
+      </div>
+    </div>
+    <div class="div6-3 col-4">
+      <img class="col-3" style="position:absolute;z-index:-1;" src="https://i.ibb.co/Mfq167w/Rectangle-23818-1.png" alt="image-20">
+      <div class="div6-3cnt">
+        <div class="date col-3"><p style="margin-left:5px;border-radius:2px;background-color:#6f00fe;color:white;padding:5px;font-size:8px;margin-bottom:0px;margin-top:210px;">April 02,2022</p></div>
+        <div class="div6-2cnt col-10"><p style="border-radius:2px;font-weight:bolder;font-size:10px;background-color:white;margin-top:0px;padding:10px;padding-top:15px;padding-bottom:15px;">Rwebinar: ree market and geo-economics</p></div>
+      </div>
+    </div>
+    <div class="div6-4 col-4">
+      <img class="col-3" style="position:absolute;z-index:-1;" src="https://i.ibb.co/JFdJs8g/Rectangle-23818-2.png" alt="image-21">
+       <div class="div6-4cnt">
+         <div class="date col-3"><p style="margin-left:5px;border-radius:2px;background-color:#6f00fe;color:white;padding:5px;font-size:8px;margin-bottom:0px;margin-top:210px;">April 02,2022</p></div>
+         <div class="div6-2cnt col-10"><p style="border-radius:2px;font-weight:bolder;font-size:10px;background-color:white;margin-top:0px;padding:10px;padding-top:15px;padding-bottom:15px;">Rwebinar: ree market and geo-economics</p></div>
+       </div>
+    </div>
+  </div>
+  <div class="div6-5"><button class="btn3" style="margin-left:420px;margin-top:30px;margin-bottom:20px;">Find Out More -&gt;</button></div>
+</div>
+
+<div class="div7">
+  <div class="div7-1"><p class="p1" style="color:#6f00fe;padding:40px;font-size:25px;padding-left:360px;padding-bottom:10px;">LET&apos;S KEEP IN TOUCH!</p></div>
+  <div class="col-5">
+  <div class="div7-2 col-6">
+    <div class="div7-2-1">
+      <p style="font-size:1px;color:#e1e1e1;">type you email address</p>
+      <p style="font-size:2px;">example@gmail.com</p>
+    </div>
+    <div class="div7-2-2" style="padding-left:50px;">
+      <button class="btn3" style="border-radius:20px;font-size:1px;">Send Now</button>
+    </div>
+  </div> 
+  </div>
+  <div class="div7-7">
+    <div class="div7-3">
+      <img class="col-10" src="https://i.ibb.co/MnHPDfn/Facebook.png" alt="Facebook">
+    </div>
+    <div class="div7-4">
+      <img class="col-10" src="https://i.ibb.co/mF73D1q/Twitter.png" alt="Twitter">
+    </div>
+    <div class="div7-5">
+      <img class="col-10" src="https://i.ibb.co/HYpW0pR/Linkedin.png" alt="Linkedin">
+    </div>
+    <div class="div7-6">
+       <img class="col-10" src="https://i.ibb.co/tJnZLd5/Instagram.png" alt="Instagram">
+    </div>
+  </div>
+
+</div>
+<div class="footer">
+  <div class="f1"> <img class="col-3"src="https://i.ibb.co/cX52b1f/image-32.png" alt="image-1" border="0"></div>
+  <div class="f2">
+    <div class="f2-1">Useful resources</div>
+    <div class="f2-2">Terms of use</div>
+    <div class="f2-3">Privacy policy</div>
+    <div class="f2-4">Contact</div>
+  </div>
+  <div class="f3">GDPR Privacy Notice / us / condition / Australian</div>
+</div>
+<div class="ftr">©2023 Reia. All rights reserved</div>
+</html>

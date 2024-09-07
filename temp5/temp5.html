@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Grids Sample</title>
+  <style>
+   .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+  
+  .root{
+    height:600px;
+    display:flex;  
+  }
+  .left-top{
+    height:49.4%;
+   
+    background-color:red;
+    border:4px solid rgb(27, 26, 26);
+  }
+   .left-bottom{
+    height:48.2%;
+    background-color:white;
+     border:4px solid rgb(14, 13, 13);
+   }
+  .row_one
+  {
+    display:flex;
+    height:30%;
+  }
+  .first-left{ 
+    background-color:#26BFBF;
+    border:4px solid rgb(17, 15, 15);
+  }
+.first-right
+  {   
+    background-color:#B8853D;
+    border:4px solid rgb(19, 14, 14);
+  }
+  .flex_one{
+    height:100%;
+    
+  }
+  .row_two{
+    height:60%;
+    display:flex;
+  }
+ .row2_left{
+   background-color:#B8853D;
+   
+   border:4px solid rgb(15, 14, 14);
+ }
+  .row2_middle{
+    background-color:white;
+      border:4px solid rgb(10, 7, 7);}
+  .row_three{
+    height:40%;
+    display:flex;
+  }
+  .row3_left{
+    background-color:red;
+    border:4px solid rgb(14, 12, 12);}
+  .row3_middle{
+    background-color:#26BFBF;
+    border:4px solid rgb(15, 14, 14);
+  }
+  
+   .flex{
+   display:flex;
+   height:70%;
+    border:4px solid ray;
+     justify-content:space-around;
+     
+ }
+  .clm_last{
+    background-color:red;
+   border:4px solid rgb(10, 8, 8);
+  height:99.1%;
+    
+  }
+
+  </style>
+</head>
+<body>
+  <div class="root col-12">
+    <div class="left_most col-2">
+      <div class="left-top "></div>
+      <div class="left-bottom"></div>
+    </div>
+    
+   
+    <div class="flex_one col-12">
+      
+      <div class="row_one"> 
+      <div class="first-left col-5"></div>
+      <div class="first-right col-7"></div>
+       </div>
+      
+      <div class="flex col-12">
+        
+     <div class="middle col-12">
+      <div class="row_two ">
+        <div class="row2_left col-4"></div>
+        <div class="row2_middle col-8"></div>
+      </div>
+      
+    <div class="row_three ">
+      <div class="row3_left col-8"></div>
+      <div class="row3_middle col-4"></div>
+    </div> 
+       
+    </div>
+      <div class="clm_last col-2"></div>
+       
+    </div>
+  </div>
+</body>
+</html>
